@@ -17,6 +17,8 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/santoni
 
+$(call inherit-product, vendor/xiaomi/santoni/santoni-vendor-vndk.mk)
+
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/santoni/proprietary/vendor/bin/gx_fpcmd:$(TARGET_COPY_OUT_VENDOR)/bin/gx_fpcmd \
     vendor/xiaomi/santoni/proprietary/vendor/bin/gx_fpd:$(TARGET_COPY_OUT_VENDOR)/bin/gx_fpd \
